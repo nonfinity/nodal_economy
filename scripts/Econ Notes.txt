@@ -1,0 +1,59 @@
+* *** *** *** *
+Class Economy
+* *** *** *** *
+Properties
+	List of pools [] of EcoPool
+	List of goods?
+	
+Members
+	balance market
+
+* *** *** *** *
+Class EcoNode
+* *** *** *** *
+Properties
+	id: float
+	neighbors: [] of EcoPool
+	nodes: [] of EcoNode
+	
+	routes_as_sink: [] of EcoRoute
+	routes_as_source: [] of EcoRoute
+	
+	
+	demand_native
+	demand_export
+	supply_native
+	supply_import
+	
+	goods available for export
+	prices
+
+Members
+	calculate_price()
+	route_share(which_route, S_or_D)
+	deliver(which_route, amount, good)
+	receive(which_route, amount, good)
+
+* *** *** *** *
+Class EcoRoute
+* *** *** *** *
+Properties
+	id: float
+	source: ecoNode
+	sink: ecoNode
+	capacity_available
+	capacity_used
+
+
+Members
+	_init(id, sink, source, capacity)
+		add self to sink & source
+	calculate_pull_quantity() -> float
+		min(route share or source export, available_capacity, sink demand)
+	transport(good, quantity)
+		mutator. performs transport of goods from sink to source
+	is_full() -> bool
+		available_capacity > 0
+
+
+

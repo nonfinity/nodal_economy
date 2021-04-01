@@ -1,0 +1,179 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://elements/ENode.tscn" type="PackedScene" id=1]
+[ext_resource path="res://MainDisplay.gd" type="Script" id=2]
+[ext_resource path="res://Camera2D.gd" type="Script" id=4]
+[ext_resource path="res://elements/ERouteListItem.tscn" type="PackedScene" id=5]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.0352941, 0.333333, 0.0823529, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.203922, 0.203922, 0.203922, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Control" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Nodes" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Malaga" parent="Nodes" instance=ExtResource( 1 )]
+margin_left = 31.5266
+margin_top = 68.3571
+margin_right = 291.527
+margin_bottom = 178.357
+
+[node name="Valencia" parent="Nodes" instance=ExtResource( 1 )]
+margin_left = 29.5604
+margin_top = 227.975
+margin_right = 289.56
+margin_bottom = 337.975
+
+[node name="Barcelona" parent="Nodes" instance=ExtResource( 1 )]
+margin_left = 28.3171
+margin_top = 397.336
+margin_right = 288.317
+margin_bottom = 507.336
+
+[node name="Spain" parent="Nodes" instance=ExtResource( 1 )]
+margin_left = 702.612
+margin_top = 198.193
+margin_right = 962.612
+margin_bottom = 308.193
+
+[node name="RouteItems" type="Control" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = 397.51
+margin_top = 73.4162
+margin_right = 747.51
+margin_bottom = 231.416
+
+[node name="ERouteListItem01" parent="RouteItems" instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -53.3936
+margin_top = 69.4117
+margin_right = 296.606
+margin_bottom = 119.412
+
+[node name="ERouteListItem02" parent="RouteItems" instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -52.0588
+margin_top = 194.158
+margin_right = 297.941
+margin_bottom = 244.158
+
+[node name="ERouteListItem03" parent="RouteItems" instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -40.0452
+margin_top = 329.583
+margin_right = 309.955
+margin_bottom = 379.583
+
+[node name="Panel" type="Panel" parent="."]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 746.018
+margin_top = 449.842
+margin_right = 896.018
+margin_bottom = 474.842
+rect_min_size = Vector2( 150, 25 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StepButton" type="ToolButton" parent="."]
+anchor_bottom = 0.5
+margin_left = 746.018
+margin_top = 449.842
+margin_right = 896.018
+margin_bottom = 474.842
+rect_min_size = Vector2( 150, 25 )
+shortcut_in_tooltip = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="StepButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -75.0
+margin_top = -12.5
+margin_right = 75.0
+margin_bottom = 12.5
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Step Market: 1 Time"
+align = 1
+valign = 1
+
+[node name="balance" type="Panel" parent="."]
+margin_left = 745.018
+margin_top = 490.842
+margin_right = 903.018
+margin_bottom = 549.842
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="balance"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+margin_right = -5.0
+margin_bottom = -5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="balance/VBoxContainer"]
+margin_right = 148.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Market Status"
+align = 1
+
+[node name="Value" type="Label" parent="balance/VBoxContainer"]
+margin_top = 18.0
+margin_right = 148.0
+margin_bottom = 48.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Out of balance"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 514, 386 )
+current = true
+script = ExtResource( 4 )
+[connection signal="pressed" from="StepButton" to="." method="_on_StepButton_pressed"]

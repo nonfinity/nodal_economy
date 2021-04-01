@@ -1,0 +1,142 @@
+is_balanced, step_count, id, name, type, export_commited, export_queued, import_commited, requested, provided, net_flow, price, source_name, source_id, sink_name, sink_id, source_share, capacity_total, capacity_taken, capacity_queued, capacity_available, good_id, quantity, route_id
+False, 0, 1, All Source, Endpoint, 0, 0, 0, 0, 99999999.9, 99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 0, 2, All Sink, Endpoint, 0, 0, 0, 99999999.9, 0, -99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 0, 3, Malaga, Node, 0, 0, 0, 0, 0, 0, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 0, 4, Valencia, Node, 0, 0, 0, 0, 0, 0, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 0, 5, Barcelona, Node, 0, 0, 0, 0, 0, 0, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 0, 6, Spain Roads, Node, 0, 0, 0, 0, 0, 0, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 0, 1, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Malaga, 3, 50, 50, 0, 0, 50, Null, Null, Null
+False, 0, 2, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Valencia, 4, 105, 105, 0, 0, 105, Null, Null, Null
+False, 0, 3, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Barcelona, 5, 85, 85, 0, 0, 85, Null, Null, Null
+False, 0, 4, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, All Sink, 2, 0, 30, 0, 0, 30, Null, Null, Null
+False, 0, 5, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, All Sink, 2, 0, 80, 0, 0, 80, Null, Null, Null
+False, 0, 6, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, All Sink, 2, 0, 110, 0, 0, 110, Null, Null, Null
+False, 0, 7, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, Spain Roads, 6, 0, 165, 0, 0, 165, Null, Null, Null
+False, 0, 8, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, Spain Roads, 6, 0, 15, 0, 0, 15, Null, Null, Null
+False, 0, 9, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, Spain Roads, 6, 0, 150, 0, 0, 150, Null, Null, Null
+False, 0, 10, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Malaga, 3, 0, 165, 0, 0, 165, Null, Null, Null
+False, 0, 11, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Valencia, 4, 0, 15, 0, 0, 15, Null, Null, Null
+False, 0, 12, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Barcelona, 5, 0, 150, 0, 0, 150, Null, Null, Null
+False, 1, 1, All Source, Endpoint, 0, 210, 0, 0, 99999999.9, 99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 1, 2, All Sink, Endpoint, 0, 0, 0, 99999999.9, 0, -99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 1, 3, Malaga, Node, 0, 0, 30, 30, 0, -30, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 1, 4, Valencia, Node, 0, 0, 95, 95, 0, -95, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 1, 5, Barcelona, Node, 0, 0, 85, 155, 0, -155, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 1, 6, Spain Roads, Node, 0, 0, 0, 195, 0, -195, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 1, 1, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Malaga, 3, 20, 50, 0, 30, 20, Null, Null, Null
+False, 1, 2, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Valencia, 4, 10, 105, 0, 95, 10, Null, Null, Null
+False, 1, 3, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Barcelona, 5, 0, 85, 0, 85, 0, Null, Null, Null
+False, 1, 4, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, All Sink, 2, 0, 30, 0, 0, 30, Null, Null, Null
+False, 1, 5, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, All Sink, 2, 0, 80, 0, 0, 80, Null, Null, Null
+False, 1, 6, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, All Sink, 2, 0, 110, 0, 0, 110, Null, Null, Null
+False, 1, 7, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, Spain Roads, 6, 0, 165, 0, 0, 165, Null, Null, Null
+False, 1, 8, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, Spain Roads, 6, 0, 15, 0, 0, 15, Null, Null, Null
+False, 1, 9, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, Spain Roads, 6, 0, 150, 0, 0, 150, Null, Null, Null
+False, 1, 10, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Malaga, 3, 0, 165, 0, 0, 165, Null, Null, Null
+False, 1, 11, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Valencia, 4, 0, 15, 0, 0, 15, Null, Null, Null
+False, 1, 12, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Barcelona, 5, 0, 150, 0, 0, 150, Null, Null, Null
+False, 1, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 30, 1
+False, 1, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 95, 2
+False, 1, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 85, 3
+False, 2, 1, All Source, Endpoint, 210, 30, 0, 0, 99999999.9, 99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 2, 2, All Sink, Endpoint, 0, 0, 195, 99999999.9, 0, -99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 2, 3, Malaga, Node, 0, 30, 20, 30, 0, -30, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 2, 4, Valencia, Node, 0, 95, 10, 95, 0, -95, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 2, 5, Barcelona, Node, 0, 85, 0, 155, 0, -155, 27.78, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 2, 6, Spain Roads, Node, 0, 0, 15, 195, 0, -195, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 2, 1, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Malaga, 3, 0, 50, 30, 20, 0, Null, Null, Null
+False, 2, 2, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Valencia, 4, 0, 105, 95, 10, 0, Null, Null, Null
+False, 2, 3, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Barcelona, 5, 0, 85, 85, 0, 0, Null, Null, Null
+False, 2, 4, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, All Sink, 2, 0, 30, 0, 30, 0, Null, Null, Null
+False, 2, 5, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, All Sink, 2, 0, 80, 0, 80, 0, Null, Null, Null
+False, 2, 6, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, All Sink, 2, 0, 110, 0, 85, 25, Null, Null, Null
+False, 2, 7, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, Spain Roads, 6, 0, 165, 0, 0, 165, Null, Null, Null
+False, 2, 8, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, Spain Roads, 6, 0, 15, 0, 15, 0, Null, Null, Null
+False, 2, 9, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, Spain Roads, 6, 0, 150, 0, 0, 150, Null, Null, Null
+False, 2, 10, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Malaga, 3, 0, 165, 0, 0, 165, Null, Null, Null
+False, 2, 11, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Valencia, 4, 0, 15, 0, 0, 15, Null, Null, Null
+False, 2, 12, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Barcelona, 5, 0, 150, 0, 0, 150, Null, Null, Null
+False, 2, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 20, 1
+False, 2, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 10, 2
+False, 2, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 30, 4
+False, 2, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 80, 5
+False, 2, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 85, 6
+False, 2, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 15, 8
+False, 3, 1, All Source, Endpoint, 240, 0, 0, 0, 99999999.9, 99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 3, 2, All Sink, Endpoint, 0, 0, 0, 99999999.9, 0, -99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 3, 3, Malaga, Node, 30, 20, 0, 0, 0, 0, 44.44, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 3, 4, Valencia, Node, 95, 0, 0, 0, 10, 10, 10, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 3, 5, Barcelona, Node, 85, 0, 15, 25, 0, -25, 46.67, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 3, 6, Spain Roads, Node, 0, 15, 20, 25, 0, -25, 52.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 3, 1, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Malaga, 3, 0, 50, 50, 0, 0, Null, Null, Null
+False, 3, 2, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Valencia, 4, 0, 105, 105, 0, 0, Null, Null, Null
+False, 3, 3, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Barcelona, 5, 0, 85, 85, 0, 0, Null, Null, Null
+False, 3, 4, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, All Sink, 2, 0, 30, 30, 0, 0, Null, Null, Null
+False, 3, 5, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, All Sink, 2, 0, 80, 80, 0, 0, Null, Null, Null
+False, 3, 6, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, All Sink, 2, 0, 110, 85, 0, 25, Null, Null, Null
+False, 3, 7, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, Spain Roads, 6, 0, 165, 0, 20, 145, Null, Null, Null
+False, 3, 8, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, Spain Roads, 6, 0, 15, 15, 0, 0, Null, Null, Null
+False, 3, 9, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, Spain Roads, 6, 0, 150, 0, 0, 150, Null, Null, Null
+False, 3, 10, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Malaga, 3, 0, 165, 0, 0, 165, Null, Null, Null
+False, 3, 11, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Valencia, 4, 0, 15, 0, 0, 15, Null, Null, Null
+False, 3, 12, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Barcelona, 5, 0, 150, 0, 15, 135, Null, Null, Null
+False, 3, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 20, 7
+False, 3, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 15, 12
+False, 4, 1, All Source, Endpoint, 240, 0, 0, 0, 99999999.9, 99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 4, 2, All Sink, Endpoint, 0, 0, 15, 99999999.9, 0, -99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 4, 3, Malaga, Node, 50, 0, 0, 0, 0, 0, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 4, 4, Valencia, Node, 95, 0, 0, 0, 10, 10, 10, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 4, 5, Barcelona, Node, 85, 15, 20, 25, 0, -25, 14.44, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 4, 6, Spain Roads, Node, 15, 20, 0, 25, 0, -25, 13.33, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 4, 1, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Malaga, 3, 0, 50, 50, 0, 0, Null, Null, Null
+False, 4, 2, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Valencia, 4, 0, 105, 105, 0, 0, Null, Null, Null
+False, 4, 3, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Barcelona, 5, 0, 85, 85, 0, 0, Null, Null, Null
+False, 4, 4, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, All Sink, 2, 0, 30, 30, 0, 0, Null, Null, Null
+False, 4, 5, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, All Sink, 2, 0, 80, 80, 0, 0, Null, Null, Null
+False, 4, 6, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, All Sink, 2, 0, 110, 85, 15, 10, Null, Null, Null
+False, 4, 7, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, Spain Roads, 6, 0, 165, 20, 0, 145, Null, Null, Null
+False, 4, 8, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, Spain Roads, 6, 0, 15, 15, 0, 0, Null, Null, Null
+False, 4, 9, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, Spain Roads, 6, 0, 150, 0, 0, 150, Null, Null, Null
+False, 4, 10, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Malaga, 3, 0, 165, 0, 0, 165, Null, Null, Null
+False, 4, 11, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Valencia, 4, 0, 15, 0, 0, 15, Null, Null, Null
+False, 4, 12, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Barcelona, 5, 0, 150, 15, 20, 115, Null, Null, Null
+False, 4, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 15, 6
+False, 4, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 20, 12
+False, 5, 1, All Source, Endpoint, 240, 0, 0, 0, 99999999.9, 99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 5, 2, All Sink, Endpoint, 0, 0, 10, 99999999.9, 0, -99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 5, 3, Malaga, Node, 50, 0, 0, 0, 0, 0, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 5, 4, Valencia, Node, 95, 0, 0, 0, 10, 10, 10, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 5, 5, Barcelona, Node, 100, 20, 0, 10, 0, -10, 10, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 5, 6, Spain Roads, Node, 35, 0, 10, 10, 0, -10, 17.78, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 5, 1, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Malaga, 3, 0, 50, 50, 0, 0, Null, Null, Null
+False, 5, 2, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Valencia, 4, 0, 105, 105, 0, 0, Null, Null, Null
+False, 5, 3, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Barcelona, 5, 0, 85, 85, 0, 0, Null, Null, Null
+False, 5, 4, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, All Sink, 2, 0, 30, 30, 0, 0, Null, Null, Null
+False, 5, 5, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, All Sink, 2, 0, 80, 80, 0, 0, Null, Null, Null
+False, 5, 6, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, All Sink, 2, 0, 110, 100, 10, 0, Null, Null, Null
+False, 5, 7, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, Spain Roads, 6, 0, 165, 20, 0, 145, Null, Null, Null
+False, 5, 8, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, Spain Roads, 6, 0, 15, 15, 0, 0, Null, Null, Null
+False, 5, 9, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, Spain Roads, 6, 0, 150, 0, 10, 140, Null, Null, Null
+False, 5, 10, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Malaga, 3, 0, 165, 0, 0, 165, Null, Null, Null
+False, 5, 11, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Valencia, 4, 0, 15, 0, 0, 15, Null, Null, Null
+False, 5, 12, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Barcelona, 5, 0, 150, 35, 0, 115, Null, Null, Null
+False, 5, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 10, 6
+False, 5, Null, Null, Transport, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, -1, 10, 9
+False, 6, 1, All Source, Endpoint, 240, 0, 0, 0, 99999999.9, 99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 6, 2, All Sink, Endpoint, 0, 0, 0, 99999999.9, 0, -99999999.9, 0, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 6, 3, Malaga, Node, 50, 0, 0, 0, 0, 0, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 6, 4, Valencia, Node, 95, 0, 0, 0, 10, 10, 10, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 6, 5, Barcelona, Node, 120, 0, 0, 0, 0, 0, 14.44, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 6, 6, Spain Roads, Node, 35, 0, 0, 0, 10, 10, 12.22, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null
+False, 6, 1, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Malaga, 3, 0, 50, 50, 0, 0, Null, Null, Null
+False, 6, 2, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Valencia, 4, 0, 105, 105, 0, 0, Null, Null, Null
+False, 6, 3, Null, Route, Null, Null, Null, Null, Null, Null, Null, All Source, 1, Barcelona, 5, 0, 85, 85, 0, 0, Null, Null, Null
+False, 6, 4, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, All Sink, 2, 0, 30, 30, 0, 0, Null, Null, Null
+False, 6, 5, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, All Sink, 2, 0, 80, 80, 0, 0, Null, Null, Null
+False, 6, 6, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, All Sink, 2, 0, 110, 110, 0, 0, Null, Null, Null
+False, 6, 7, Null, Route, Null, Null, Null, Null, Null, Null, Null, Malaga, 3, Spain Roads, 6, 0, 165, 20, 0, 145, Null, Null, Null
+False, 6, 8, Null, Route, Null, Null, Null, Null, Null, Null, Null, Valencia, 4, Spain Roads, 6, 0, 15, 15, 0, 0, Null, Null, Null
+False, 6, 9, Null, Route, Null, Null, Null, Null, Null, Null, Null, Barcelona, 5, Spain Roads, 6, 0, 150, 10, 0, 140, Null, Null, Null
+False, 6, 10, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Malaga, 3, 10, 165, 0, 0, 165, Null, Null, Null
+False, 6, 11, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Valencia, 4, 10, 15, 0, 0, 15, Null, Null, Null
+False, 6, 12, Null, Route, Null, Null, Null, Null, Null, Null, Null, Spain Roads, 6, Barcelona, 5, 10, 150, 35, 0, 115, Null, Null, Null

@@ -1,0 +1,136 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://elements/ERouteMono.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.145098, 0.145098, 0.145098, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.768627, 0.768627, 0.768627, 1 )
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxLine" id=2]
+color = Color( 1, 1, 1, 1 )
+vertical = true
+
+[node name="ERouteListItem" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -774.0
+margin_bottom = -755.0
+rect_min_size = Vector2( 250, 45 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sorter" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+margin_right = -5.0
+margin_bottom = -5.0
+alignment = 1
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="labels" type="VBoxContainer" parent="Sorter"]
+margin_left = 4.0
+margin_right = 54.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 50, 35 )
+size_flags_vertical = 3
+alignment = 1
+
+[node name="source" type="Label" parent="Sorter/labels"]
+margin_top = 1.0
+margin_right = 50.0
+margin_bottom = 15.0
+text = "Source"
+
+[node name="sink" type="Label" parent="Sorter/labels"]
+margin_top = 19.0
+margin_right = 50.0
+margin_bottom = 33.0
+text = "Sink"
+
+[node name="values" type="VBoxContainer" parent="Sorter"]
+margin_left = 58.0
+margin_right = 158.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 100, 35 )
+size_flags_vertical = 3
+alignment = 1
+
+[node name="source" type="Label" parent="Sorter/values"]
+margin_top = 1.0
+margin_right = 100.0
+margin_bottom = 15.0
+text = "Western Med"
+
+[node name="sink" type="Label" parent="Sorter/values"]
+margin_top = 19.0
+margin_right = 100.0
+margin_bottom = 33.0
+text = "Western Med"
+
+[node name="VSeparator" type="VSeparator" parent="Sorter"]
+margin_left = 162.0
+margin_right = 166.0
+margin_bottom = 35.0
+size_flags_vertical = 3
+custom_styles/separator = SubResource( 2 )
+
+[node name="capacity" type="VBoxContainer" parent="Sorter"]
+margin_left = 170.0
+margin_right = 235.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 65, 35 )
+size_flags_vertical = 3
+custom_constants/separation = 1
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Sorter/capacity"]
+margin_right = 65.0
+margin_bottom = 17.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Capacity"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="Sorter/capacity"]
+margin_top = 18.0
+margin_right = 65.0
+margin_bottom = 35.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "999 / 999"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

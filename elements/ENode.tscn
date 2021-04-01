@@ -1,0 +1,499 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://elements/ENode.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.176471, 0.176471, 0.176471, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="ENode" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -724.0
+margin_bottom = -650.0
+rect_min_size = Vector2( 300, 150 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 4.0
+margin_right = -5.0
+margin_bottom = -3.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Panel" parent="VBoxContainer"]
+margin_right = 290.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 100, 25 )
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/title"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_right = -2.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="VBoxContainer/title/HBoxContainer"]
+margin_top = 5.0
+margin_right = 245.0
+margin_bottom = 19.0
+size_flags_horizontal = 3
+text = "Hub Name"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="type" type="Label" parent="VBoxContainer/title/HBoxContainer"]
+margin_left = 249.0
+margin_top = 5.0
+margin_right = 286.0
+margin_bottom = 19.0
+text = "POOL"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BaseInfo" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 29.0
+margin_right = 290.0
+margin_bottom = 69.0
+size_flags_horizontal = 3
+
+[node name="sup_nat" type="Panel" parent="VBoxContainer/BaseInfo"]
+margin_right = 69.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 60, 40 )
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer/BaseInfo/sup_nat"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/BaseInfo/sup_nat/HBoxContainer"]
+margin_right = 69.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "Supply"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="VBoxContainer/BaseInfo/sup_nat/HBoxContainer"]
+margin_top = 20.0
+margin_right = 69.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "$32.15"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dem_nat" type="Panel" parent="VBoxContainer/BaseInfo"]
+margin_left = 73.0
+margin_right = 143.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 60, 40 )
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer/BaseInfo/dem_nat"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/BaseInfo/dem_nat/HBoxContainer"]
+margin_right = 70.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "Demand"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="VBoxContainer/BaseInfo/dem_nat/HBoxContainer"]
+margin_top = 20.0
+margin_right = 70.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "$32.15"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sup_imp" type="Panel" parent="VBoxContainer/BaseInfo"]
+margin_left = 147.0
+margin_right = 216.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 60, 40 )
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer/BaseInfo/sup_imp"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/BaseInfo/sup_imp/HBoxContainer"]
+margin_right = 69.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "Imports"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="VBoxContainer/BaseInfo/sup_imp/HBoxContainer"]
+margin_top = 20.0
+margin_right = 69.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "$32.15"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dem_exp" type="Panel" parent="VBoxContainer/BaseInfo"]
+margin_left = 220.0
+margin_right = 290.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 60, 40 )
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer/BaseInfo/dem_exp"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/BaseInfo/dem_exp/HBoxContainer"]
+margin_right = 70.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "Exports"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="VBoxContainer/BaseInfo/dem_exp/HBoxContainer"]
+margin_top = 20.0
+margin_right = 70.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "$32.15"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CompInfo" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 73.0
+margin_right = 290.0
+margin_bottom = 113.0
+size_flags_horizontal = 3
+
+[node name="prov" type="Panel" parent="VBoxContainer/CompInfo"]
+margin_right = 69.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 60, 40 )
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer/CompInfo/prov"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/CompInfo/prov/HBoxContainer"]
+margin_right = 69.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "Provide"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="VBoxContainer/CompInfo/prov/HBoxContainer"]
+margin_top = 20.0
+margin_right = 69.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "$32.15"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="req" type="Panel" parent="VBoxContainer/CompInfo"]
+margin_left = 73.0
+margin_right = 143.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 60, 40 )
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer/CompInfo/req"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/CompInfo/req/HBoxContainer"]
+margin_right = 70.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "Request"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="VBoxContainer/CompInfo/req/HBoxContainer"]
+margin_top = 20.0
+margin_right = 70.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "$32.15"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="netflow" type="Panel" parent="VBoxContainer/CompInfo"]
+margin_left = 147.0
+margin_right = 216.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 60, 40 )
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer/CompInfo/netflow"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/CompInfo/netflow/HBoxContainer"]
+margin_right = 69.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "Net Flow"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="VBoxContainer/CompInfo/netflow/HBoxContainer"]
+margin_top = 20.0
+margin_right = 69.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "$32.15"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gafx" type="Panel" parent="VBoxContainer/CompInfo"]
+margin_left = 220.0
+margin_right = 290.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 60, 40 )
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer/CompInfo/gafx"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/CompInfo/gafx/HBoxContainer"]
+margin_right = 70.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "GAFX"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="VBoxContainer/CompInfo/gafx/HBoxContainer"]
+margin_top = 20.0
+margin_right = 70.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+text = "$32.15"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="price" type="Panel" parent="VBoxContainer"]
+margin_top = 117.0
+margin_right = 290.0
+margin_bottom = 142.0
+rect_min_size = Vector2( 100, 25 )
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/price"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/price/HBoxContainer"]
+margin_top = 5.0
+margin_right = 143.0
+margin_bottom = 19.0
+size_flags_horizontal = 3
+text = "Good Price"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="VBoxContainer/price/HBoxContainer"]
+margin_left = 147.0
+margin_top = 5.0
+margin_right = 290.0
+margin_bottom = 19.0
+size_flags_horizontal = 3
+text = "$32.15"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

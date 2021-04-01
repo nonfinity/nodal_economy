@@ -1,0 +1,182 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/dumbell.png" type="Texture" id=1]
+[ext_resource path="res://elements/ERoute.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.176471, 0.176471, 0.176471, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="ERoute" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -924.0
+margin_bottom = -500.0
+rect_min_size = Vector2( 100, 300 )
+rect_pivot_offset = Vector2( 50, 150 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -150.0
+margin_right = 25.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 50, 300 )
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CapBox" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -17.5
+margin_right = 50.0
+margin_bottom = 17.5
+rect_min_size = Vector2( 100, 35 )
+rect_pivot_offset = Vector2( 50, 17.5 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sorter" type="VBoxContainer" parent="CapBox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CapBox/Sorter"]
+margin_top = 3.0
+margin_right = 100.0
+margin_bottom = 17.0
+text = "Capacity"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="CapBox/Sorter"]
+margin_top = 17.0
+margin_right = 100.0
+margin_bottom = 31.0
+text = "50 / 140"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SideA" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -50.0
+margin_right = 50.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 100, 35 )
+rect_pivot_offset = Vector2( 50, 17.5 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sorter" type="VBoxContainer" parent="SideA"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="SideA/Sorter"]
+margin_top = 3.0
+margin_right = 100.0
+margin_bottom = 17.0
+text = "Side A"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="SideA/Sorter"]
+margin_top = 17.0
+margin_right = 100.0
+margin_bottom = 31.0
+text = "+ 350"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SideB" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -50.0
+margin_top = -35.0
+margin_right = 50.0
+rect_min_size = Vector2( 100, 35 )
+rect_pivot_offset = Vector2( 50, 17.5 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sorter" type="VBoxContainer" parent="SideB"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="SideB/Sorter"]
+margin_top = 3.0
+margin_right = 100.0
+margin_bottom = 17.0
+text = "Side B"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="SideB/Sorter"]
+margin_top = 17.0
+margin_right = 100.0
+margin_bottom = 31.0
+text = "- 350"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

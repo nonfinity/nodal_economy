@@ -1,0 +1,202 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/arrow.png" type="Texture" id=1]
+[ext_resource path="res://elements/ERouteListItem.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.145098, 0.145098, 0.145098, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.768627, 0.768627, 0.768627, 1 )
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="ERouteListItem" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -724.0
+margin_bottom = -750.0
+rect_min_size = Vector2( 350, 50 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sorter" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 5.0
+margin_bottom = -5.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="side_a" type="Panel" parent="Sorter"]
+margin_right = 125.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 125, 40 )
+
+[node name="Sorter" type="VBoxContainer" parent="Sorter/side_a"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_vertical = 3
+custom_constants/separation = 1
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Sorter/side_a/Sorter"]
+margin_right = 125.0
+margin_bottom = 19.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Side A"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="Sorter/side_a/Sorter"]
+margin_top = 20.0
+margin_right = 125.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Western Med"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="flow" type="Panel" parent="Sorter"]
+margin_left = 129.0
+margin_right = 169.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+
+[node name="Sorter" type="VBoxContainer" parent="Sorter/flow"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_vertical = 3
+custom_constants/separation = 1
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Arrow" type="TextureRect" parent="Sorter/flow/Sorter"]
+margin_right = 40.0
+margin_bottom = 10.0
+rect_min_size = Vector2( 40, 10 )
+texture = ExtResource( 1 )
+expand = true
+
+[node name="Value" type="Label" parent="Sorter/flow/Sorter"]
+margin_top = 11.0
+margin_right = 40.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "3500"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="side_b" type="Panel" parent="Sorter"]
+margin_left = 173.0
+margin_right = 298.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 125, 40 )
+
+[node name="Sorter" type="VBoxContainer" parent="Sorter/side_b"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_vertical = 3
+custom_constants/separation = 1
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Sorter/side_b/Sorter"]
+margin_right = 125.0
+margin_bottom = 19.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Side B"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="Sorter/side_b/Sorter"]
+margin_top = 20.0
+margin_right = 125.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Western Med"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="capacity" type="Panel" parent="Sorter"]
+margin_left = 302.0
+margin_right = 342.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+
+[node name="Sorter" type="VBoxContainer" parent="Sorter/capacity"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_vertical = 3
+custom_constants/separation = 1
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Sorter/capacity/Sorter"]
+margin_right = 40.0
+margin_bottom = 19.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Max"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="Sorter/capacity/Sorter"]
+margin_top = 20.0
+margin_right = 40.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "3500"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

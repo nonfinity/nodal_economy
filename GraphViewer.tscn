@@ -1,0 +1,345 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://elements/ENodeMono.tscn" type="PackedScene" id=1]
+[ext_resource path="res://elements/ERouteMono.tscn" type="PackedScene" id=2]
+[ext_resource path="res://GraphViewer.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.0980392, 0.0980392, 0.0980392, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="GraphViewer" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="Nodes" type="Node2D" parent="."]
+
+[node name="Source" parent="Nodes" instance=ExtResource( 1 )]
+margin_left = -480.421
+margin_top = 66.2255
+margin_right = -320.421
+margin_bottom = 206.225
+
+[node name="Sink" parent="Nodes" instance=ExtResource( 1 )]
+margin_left = -485.503
+margin_top = 218.468
+margin_right = -325.503
+margin_bottom = 358.468
+
+[node name="Malaga" parent="Nodes" instance=ExtResource( 1 )]
+margin_left = -83.1749
+margin_top = -390.706
+margin_right = 76.8251
+margin_bottom = -250.706
+
+[node name="Valencia" parent="Nodes" instance=ExtResource( 1 )]
+margin_left = -83.3637
+margin_top = -247.968
+margin_right = 76.6363
+margin_bottom = -107.968
+
+[node name="Barcelona" parent="Nodes" instance=ExtResource( 1 )]
+margin_left = -80.0001
+margin_top = -100.768
+margin_right = 79.9999
+margin_bottom = 39.2325
+
+[node name="Roads" parent="Nodes" instance=ExtResource( 1 )]
+margin_left = 339.928
+margin_top = 164.456
+margin_right = 499.928
+margin_bottom = 304.456
+
+[node name="Routes" type="Node2D" parent="."]
+
+[node name="Route01" parent="Routes" instance=ExtResource( 2 )]
+margin_left = -298.018
+margin_top = 129.625
+margin_right = -48.0179
+margin_bottom = 174.625
+
+[node name="Route02" parent="Routes" instance=ExtResource( 2 )]
+margin_left = -298.018
+margin_top = 189.085
+margin_right = -48.0178
+margin_bottom = 234.085
+
+[node name="Route03" parent="Routes" instance=ExtResource( 2 )]
+margin_left = -301.193
+margin_top = 251.721
+margin_right = -51.1927
+margin_bottom = 296.721
+
+[node name="Route04" parent="Routes" instance=ExtResource( 2 )]
+margin_left = -342.684
+margin_top = -337.083
+margin_right = -92.6843
+margin_bottom = -292.083
+
+[node name="Route05" parent="Routes" instance=ExtResource( 2 )]
+margin_left = -345.859
+margin_top = -278.349
+margin_right = -95.8591
+margin_bottom = -233.349
+
+[node name="Route06" parent="Routes" instance=ExtResource( 2 )]
+margin_left = -345.859
+margin_top = -221.203
+margin_right = -95.859
+margin_bottom = -176.203
+
+[node name="Route07" parent="Routes" instance=ExtResource( 2 )]
+margin_left = 93.689
+margin_top = -334.718
+margin_right = 343.689
+margin_bottom = -289.718
+
+[node name="Route08" parent="Routes" instance=ExtResource( 2 )]
+margin_left = 93.689
+margin_top = -275.984
+margin_right = 343.689
+margin_bottom = -230.984
+
+[node name="Route09" parent="Routes" instance=ExtResource( 2 )]
+margin_left = 93.689
+margin_top = -215.663
+margin_right = 343.689
+margin_bottom = -170.663
+
+[node name="Route10" parent="Routes" instance=ExtResource( 2 )]
+margin_left = 79.6581
+margin_top = 162.614
+margin_right = 329.658
+margin_bottom = 207.614
+
+[node name="Route11" parent="Routes" instance=ExtResource( 2 )]
+margin_left = 78.0706
+margin_top = 212.617
+margin_right = 328.071
+margin_bottom = 257.617
+
+[node name="Route12" parent="Routes" instance=ExtResource( 2 )]
+margin_left = 76.9547
+margin_top = 263.248
+margin_right = 326.955
+margin_bottom = 308.248
+
+[node name="Controls" type="Panel" parent="."]
+margin_left = 276.941
+margin_top = -93.4895
+margin_right = 411.941
+margin_bottom = 41.5105
+rect_min_size = Vector2( 135, 135 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sorter" type="VBoxContainer" parent="Controls"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+margin_right = -5.0
+margin_bottom = -5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="take_step" type="Button" parent="Controls/Sorter"]
+margin_right = 125.0
+margin_bottom = 20.0
+text = "Market 1 Step"
+
+[node name="status" type="Panel" parent="Controls/Sorter"]
+margin_top = 24.0
+margin_right = 125.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 0, 30 )
+
+[node name="Sorter" type="VBoxContainer" parent="Controls/Sorter/status"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 0, 30 )
+custom_constants/separation = 0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Controls/Sorter/status/Sorter"]
+margin_right = 125.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 0, 15 )
+size_flags_vertical = 1
+text = "Market State"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="Controls/Sorter/status/Sorter"]
+margin_top = 15.0
+margin_right = 125.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 0, 15 )
+size_flags_horizontal = 3
+text = "Out of Balance"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Checker" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -376.288
+margin_top = -120.181
+margin_right = -226.288
+margin_bottom = 9.81915
+rect_min_size = Vector2( 150, 130 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sorter" type="VBoxContainer" parent="Checker"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 0, 35 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="source" type="HBoxContainer" parent="Checker/Sorter"]
+margin_top = 10.0
+margin_right = 150.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 0, 15 )
+
+[node name="Label" type="Label" parent="Checker/Sorter/source"]
+margin_right = 43.0
+margin_bottom = 14.0
+text = "Source"
+align = 1
+
+[node name="Value" type="Label" parent="Checker/Sorter/source"]
+margin_left = 47.0
+margin_right = 71.0
+margin_bottom = 14.0
+text = "999"
+align = 1
+
+[node name="sink" type="HBoxContainer" parent="Checker/Sorter"]
+margin_top = 29.0
+margin_right = 150.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 0, 15 )
+
+[node name="Label" type="Label" parent="Checker/Sorter/sink"]
+margin_right = 26.0
+margin_bottom = 14.0
+text = "Sink"
+align = 1
+
+[node name="Value" type="Label" parent="Checker/Sorter/sink"]
+margin_left = 30.0
+margin_right = 54.0
+margin_bottom = 14.0
+text = "999"
+align = 1
+
+[node name="net1" type="HBoxContainer" parent="Checker/Sorter"]
+margin_top = 48.0
+margin_right = 150.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 0, 15 )
+
+[node name="Label" type="Label" parent="Checker/Sorter/net1"]
+margin_right = 53.0
+margin_bottom = 14.0
+text = "Gross    "
+align = 1
+
+[node name="Value" type="Label" parent="Checker/Sorter/net1"]
+margin_left = 57.0
+margin_right = 81.0
+margin_bottom = 14.0
+text = "999"
+align = 1
+
+[node name="outRoad" type="HBoxContainer" parent="Checker/Sorter"]
+margin_top = 67.0
+margin_right = 150.0
+margin_bottom = 82.0
+rect_min_size = Vector2( 0, 15 )
+alignment = 2
+
+[node name="Label" type="Label" parent="Checker/Sorter/outRoad"]
+margin_left = 54.0
+margin_right = 122.0
+margin_bottom = 14.0
+text = "From Road"
+align = 1
+
+[node name="Value" type="Label" parent="Checker/Sorter/outRoad"]
+margin_left = 126.0
+margin_right = 150.0
+margin_bottom = 14.0
+text = "999"
+align = 1
+
+[node name="inRoad" type="HBoxContainer" parent="Checker/Sorter"]
+margin_top = 86.0
+margin_right = 150.0
+margin_bottom = 101.0
+rect_min_size = Vector2( 0, 15 )
+alignment = 2
+
+[node name="Label" type="Label" parent="Checker/Sorter/inRoad"]
+margin_left = 72.0
+margin_right = 122.0
+margin_bottom = 14.0
+text = "To Road"
+align = 1
+
+[node name="Value" type="Label" parent="Checker/Sorter/inRoad"]
+margin_left = 126.0
+margin_right = 150.0
+margin_bottom = 14.0
+text = "999"
+align = 1
+
+[node name="net2" type="HBoxContainer" parent="Checker/Sorter"]
+margin_top = 105.0
+margin_right = 150.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 0, 15 )
+alignment = 2
+
+[node name="Label" type="Label" parent="Checker/Sorter/net2"]
+margin_left = 99.0
+margin_right = 122.0
+margin_bottom = 14.0
+text = "Net"
+align = 1
+
+[node name="Value" type="Label" parent="Checker/Sorter/net2"]
+margin_left = 126.0
+margin_right = 150.0
+margin_bottom = 14.0
+text = "999"
+align = 1
+[connection signal="pressed" from="Controls/Sorter/take_step" to="." method="_on_take_step_pressed"]
