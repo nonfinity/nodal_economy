@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://elements/inventory/Hub.gd" type="Script" id=1]
+
+[node name="Hub" type="PanelContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -794.0
+margin_bottom = -700.0
+rect_min_size = Vector2( 230, 100 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 223.0
+margin_bottom = 93.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Sorter"]
+margin_right = 216.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+align = 1
+
+[node name="Tabs" type="TabContainer" parent="Sorter"]
+margin_top = 18.0
+margin_right = 216.0
+margin_bottom = 86.0
+size_flags_horizontal = 3
+size_flags_vertical = 3

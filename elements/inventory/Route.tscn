@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://elements/inventory/HText.tscn" type="PackedScene" id=1]
+[ext_resource path="res://elements/inventory/Route.gd" type="Script" id=2]
+
+[node name="Route" type="PanelContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -774.0
+margin_bottom = -730.0
+rect_min_size = Vector2( 250, 60 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sorter" type="HBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 243.0
+margin_bottom = 63.0
+custom_constants/separation = 0
+
+[node name="Endpoints" type="VBoxContainer" parent="Sorter"]
+margin_right = 145.0
+margin_bottom = 56.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="source" parent="Sorter/Endpoints" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 145.0
+margin_bottom = 28.0
+
+[node name="sink" parent="Sorter/Endpoints" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 28.0
+margin_right = 145.0
+margin_bottom = 56.0
+
+[node name="VSeparator" type="VSeparator" parent="Sorter"]
+margin_left = 145.0
+margin_right = 149.0
+margin_bottom = 56.0
+
+[node name="Notes" type="VBoxContainer" parent="Sorter"]
+margin_left = 149.0
+margin_right = 236.0
+margin_bottom = 56.0
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="dist" parent="Sorter/Notes" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 87.0
+margin_bottom = 28.0
+
+[node name="cap" parent="Sorter/Notes" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 28.0
+margin_right = 87.0
+margin_bottom = 56.0
